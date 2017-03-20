@@ -9,6 +9,8 @@ var {Route, Router, IndexRoute, hashHistory} = require('react-router');
 //var Route = require('react-router').Route;
 
 var Main = require('Main');
+var Countdown = require('Countdown');
+var Timer = require('Timer');
 
 
 //Load foundation.need to use those style and css loader modules,to help app to use the file properly
@@ -24,7 +26,8 @@ require('style!css!sass!applicationStyles');
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path='/' component={Main}>
-
+      <Route path='countdown' component={Countdown}/>
+      <IndexRoute component={Timer}/>
     </Route>
   </Router>,
 
