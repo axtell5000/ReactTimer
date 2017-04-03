@@ -14,7 +14,7 @@ var Timer = require('Timer');
 
 
 //Load foundation.need to use those style and css loader modules,to help app to use the file properly
-require('style!css!foundation-sites/dist/css/foundation.min.css');
+// require('style!css!foundation-sites/dist/css/foundation.min.css');
 //To start foundation
 $(document).foundation();
 
